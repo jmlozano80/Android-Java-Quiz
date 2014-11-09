@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Java Trivial</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="wellcome">Cambia la configuracion o empieza a jugar</string>
+	<string name="buttonPlay">Jugar</string>
+	<string name="buttonSettings">Configuracion</string>
+</resources>

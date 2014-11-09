@@ -1,0 +1,243 @@
+<!--
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GameActivity" >
+
+    <Button
+        android:id="@+id/buttonNextQuestion"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioAnswer"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="51dp"
+        android:layout_toLeftOf="@+id/radioAnswer"
+        android:background="@drawable/button"
+        android:onClick="getFormData"
+        android:text="@string/buttonNextQuestion"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioAnswer"
+        android:layout_toRightOf="@+id/buttonNextQuestion"
+        android:text="@string/Question"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="112dp"
+        android:layout_toLeftOf="@+id/buttonPreviousQuestion"
+        android:onClick="onRadioButtonClick"
+        android:text="@string/answerRadioButton4"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton4"
+        android:layout_marginRight="112dp"
+        android:layout_toLeftOf="@+id/buttonPreviousQuestion" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:onClick="onRadioButtonClick"
+            android:text="@string/answerRadioButton1"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="@string/answerRadioButton2"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="@string/answerRadioButton3"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="@string/answerRadioButton4"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonPreviousQuestion"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonNextQuestion"
+        android:layout_alignBottom="@+id/buttonNextQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="248dp"
+        android:background="@drawable/button"
+        android:onClick="getFormData"
+        android:text="@string/buttonPreviousQuestion"
+        android:textColor="@color/white" />
+</RelativeLayout>
+-->
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:android3="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GameActivity" >
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="39dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:text="00:00:00"
+         />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTimer"
+        android:layout_marginLeft="264dp"
+        android:layout_toRightOf="@+id/textTimer"
+        android:gravity="center"
+        android:text="@string/Question"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+     <RadioGroup
+         android3:id="@+id/radioAnswer"
+         android3:layout_width="wrap_content"
+         android3:layout_height="wrap_content"
+         android3:layout_alignLeft="@+id/textViewQuestion"
+         android3:layout_alignTop="@+id/textTimer"
+         android:saveEnabled="false" >
+
+         <RadioButton
+             android3:id="@+id/radioButton1"
+             android3:layout_width="wrap_content"
+             android3:layout_height="wrap_content"
+             android3:layout_marginTop="80dp"
+             android3:onClick="onRadioButtonClick"
+             android3:text="@string/answerRadioButton1"
+             android3:textColor="@color/white"
+             android3:textSize="20sp" 
+             android:saveEnabled="false"/>
+
+         <RadioButton
+             android3:id="@+id/radioButton2"
+             android3:layout_width="wrap_content"
+             android3:layout_height="wrap_content"
+             android3:onClick="onRadioButtonClick"
+             android3:text="@string/answerRadioButton2"
+             android3:textColor="@color/white"
+             android3:textSize="20sp" />
+
+         <RadioButton
+             android3:id="@+id/radioButton3"
+             android3:layout_width="wrap_content"
+             android3:layout_height="wrap_content"
+             android3:onClick="onRadioButtonClick"
+             android3:text="@string/answerRadioButton3"
+             android3:textColor="@color/white"
+             android3:textSize="20sp" />
+
+         <RadioButton
+             android3:id="@+id/radioButton4"
+             android3:layout_width="wrap_content"
+             android3:layout_height="wrap_content"
+             android3:onClick="onRadioButtonClick"
+             android3:text="@string/answerRadioButton4"
+             android3:textColor="@color/white"
+             android3:textSize="20sp" />
+     </RadioGroup>
+
+     <Button
+         android3:id="@+id/buttonPreviousQuestion"
+         android3:layout_width="100dp"
+         android3:layout_height="wrap_content"
+         android3:layout_alignBaseline="@+id/buttonNextQuestion"
+         android3:layout_alignBottom="@+id/buttonNextQuestion"
+         android3:layout_toRightOf="@+id/textTimer"
+         android3:background="@drawable/button"
+         android3:onClick="previousQuestion"
+         android3:text="@string/buttonPreviousQuestion"
+         android3:textColor="@color/white" />
+
+     <Button
+         android3:id="@+id/buttonNextQuestion"
+         android3:layout_width="100dp"
+         android3:layout_height="wrap_content"
+         android3:layout_alignParentBottom="true"
+         android3:layout_alignParentRight="true"
+         android3:layout_marginBottom="51dp"
+         android3:layout_marginRight="133dp"
+         android3:background="@drawable/button"
+         android3:onClick="nextQuestion"
+         android3:text="@string/buttonNextQuestion"
+         android3:textColor="@color/white" />
+
+     <TextView
+         android3:id="@+id/counter"
+         android3:layout_width="wrap_content"
+         android3:layout_height="wrap_content"
+         android3:layout_above="@+id/textViewQuestion"
+         android3:layout_alignParentRight="true"
+         android3:layout_marginRight="88dp"
+         android3:text="@string/counter"
+         android3:textColor="@color/white"
+         android3:textSize="32sp" />
+
+     <Button
+         android3:id="@+id/buttonSubmitQuiz"
+         android3:layout_width="100dp"
+         android3:layout_height="wrap_content"
+         android3:layout_alignBaseline="@+id/buttonNextQuestion"
+         android3:layout_alignBottom="@+id/buttonNextQuestion"
+         android3:layout_centerHorizontal="true"
+         android3:background="@drawable/button"
+         android3:onClick="submitQuiz"
+         android3:text="@string/buttonSubmitQuiz"
+         android3:textColor="@color/white" />
+
+</RelativeLayout>

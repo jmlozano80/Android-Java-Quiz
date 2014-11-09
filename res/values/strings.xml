@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings for main activity -->
+
+    <string name="app_name">JavaQuiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="wellcome">Welcome to Java Quiz</string>
+    <string name="buttonLogin">Login</string>
+    <string name="buttonRegister">Register</string>
+    <string name="title_activity_game">Game</string>
+    <string name="Question">Question  here </string>
+    <string name="answerRadioButton1">Answer1  here </string>
+    <string name="answerRadioButton2">Answer2  here </string>
+    <string name="answerRadioButton3">Answer3  here </string>
+    <string name="answerRadioButton4">Answer4  here </string>
+
+    <!-- Strings for register activity -->
+
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register">Please complete the form to register</string>
+    <string name="login">Please complete the form to login</string>
+    <string name="hintRegisterUserName">User Name</string>
+    <string name="hintUserEmail">email</string>
+    <string name="hintUserPassword">password</string>
+    <string name="hintUserRePassword">re-password</string>
+    <string name="title_activity_activity_login">Activity_login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_after_login">AfterLogin</string>
+
+    <!-- Strings for register activity -->
+    <string name="after_login">Select the settings or start the game</string>
+    <string name="buttonSettings">Settings</string>
+    <string name="buttonStartGame">Start</string>
+
+    <!-- Strings for game activity -->
+    <string name="buttonPreviousQuestion">previous</string>
+    <string name="buttonNextQuestion">next</string>
+    <string name="buttonSubmitQuiz">submit</string>
+    <string name="counter">1/10</string>
+    <string name="title_activity_setting">Setting</string>
+
+    <!-- Strings for setting activity -->
+    <string name="difficulty">Select the difficulty</string>
+    <string name="numberOfQuestions">Select N of questions</string>
+
+    <!-- arrays for Spinner -->
+    <string-array name="arrayNumberOfQuestions">
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="arrayDifficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+    </string-array>
+
+    <string name="submitBtn">submit</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_result">Result</string>
+    <string name="title_section1">RESULT</string>
+    <string name="title_section2">TOP SCORE</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_result_fragment">ResultFragment</string>
+    <string name="title_activity_history_result">HistoryResult</string>
+    <string name="title_activity_results">Results</string>
+    
+    <!-- result fragment -->
+    <string name="result">SCORE</string>
+    <string name="totalQuestions">Questions</string>
+    <string name="attented">Attend</string>
+    <string name="right">Correct</string>
+    <string name="Time">Time</string>
+    <string name="playAgain">play again</string>
+    <string name="seeQuestions">see questions</string>
+	
+	<!-- top score fragment -->
+	
+	<string name="topScore">Your Top Score</string>
+	
+</resources>
